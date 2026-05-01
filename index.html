@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>water Billing Final Project</title>
+</head>
+<body>
+    <div class="navbar" id="navbar" style="display: none;">
+        <h1 id="welcomeUser">Dashboard</h1>
+        <button id="logoutBtn">
+            <i class="bi bi-box-arrow-right" data-bs-toggle="tooltip" title="Log Out"></i> Logout
+        </button>
+    </div>
+
+    <div class="container" id="loginSection">
+        <h2>Search Serial ID</h2>
+        <div class="input-group">
+            <label>Serial ID
+                <input type="text" id="serialID">
+                <span class="error-label" id="serialID_error"></span>
+            </label>
+        </div>
+        <button id="searchBtn">Search</button>
+        <span class="error-label" id="statusError"></span>
+    </div>
+
+    <!-- DASHBOARD SECTION -->
+    <div class="container" id="dashboardSection" style="display: none;">
+    <h2>Water Billing Receipt</h2>
+    
+    <table class="table">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Information</th>
+                </tr>
+            </thead>
+            <tbody id="userInfoTable">
+                <!-- User Info will be injected here -->
+            </tbody>
+        </table>
+        
+    <script src="script.js"></script>
+</body>
+</html>
