@@ -15,13 +15,21 @@ body {
   top: 0; left: 0;
   width: 230px;
   height: 100vh;
-  background: #1a7ab5;
+  background: #0d6efd;
   display: flex !important;
   flex-direction: column;
   align-items: center;
   padding: 24px 16px;
 }
 
+#left-bar {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor:pointer;
+}
 /* App icon placeholder */
 .navbar::before {
   content: "💧🚰";
@@ -38,18 +46,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Nav links rendered in CSS only — no HTML changes */
-.navbar::after {
-  content: "Home Page\A Bill Payment\A About Us";
-  white-space: pre;
-  color: rgba(255,255,255,0.85);
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 3.2;
-  text-align: center;
-  width: 100%;
-}
-
 
 /* === MAIN AREA === */
 .container {
@@ -63,8 +59,8 @@ body {
 #dashboardSection {
   background: #f0f4f8;
   border-radius: 6px;
-  padding: 40px;
-  max-width: 960px;
+  padding: auto;
+  max-width: auto;
 }
 
 /* === HEADINGS === */
@@ -98,7 +94,7 @@ body {
 }
 
 #searchBtn {
-  background: #1a7ab5;
+  background: #0d6efd;
   color: white;
   border: none;
   padding: 9px 36px;

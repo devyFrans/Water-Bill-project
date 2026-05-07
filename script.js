@@ -19,7 +19,7 @@ const users = [
 ];
 
 
-const navbar = document.querySelector('#navbar');
+const navbar = document.querySelector('#navbar'); // sa nav bar ba to sa left side ng main button naitn?
 const logoutBtn = document.querySelector('#logoutBtn');
 const loginSection = document.querySelector('#loginSection');
 const serialID = document.querySelector('#serialID');
@@ -30,7 +30,15 @@ const dashboardSection = document.querySelector('#dashboardSection');
 const userInfoTable =  document.querySelector('#userInfoTable');
 const computeBTN = document.querySelector('#computeBTN');
 
-
+function homePage() {
+    alert("HOME PAGE")
+}
+function aboutPage() {
+    alert("ABOUT PAGE")
+}
+function contactPage() {
+    alert("CONTACT PAGE")
+}
 searchBtn.addEventListener('click', function(){
     
     if(serialID.value.trim() == ""){
