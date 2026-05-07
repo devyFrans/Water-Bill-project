@@ -1,0 +1,158 @@
+
+/* === RESET === */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #e8eef4;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.navbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 230px;
+  height: 100vh;
+  background: #1a7ab5;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+/* App icon placeholder */
+.navbar::before {
+  content: "💧🚰";
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+/* App title */
+#welcomeUser {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Nav links rendered in CSS only — no HTML changes */
+.navbar::after {
+  content: "Home Page\A Bill Payment\A About Us";
+  white-space: pre;
+  color: rgba(255,255,255,0.85);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 3.2;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* === MAIN AREA === */
+.container {
+  margin-left: 230px;
+  padding: 40px 50px;
+  width: calc(100% - 230px);
+}
+
+/* === CARD === */
+#loginSection,
+#dashboardSection {
+  background: #f0f4f8;
+  border-radius: 6px;
+  padding: 40px;
+  max-width: 960px;
+}
+
+/* === HEADINGS === */
+#loginSection h2,
+#dashboardSection h2 {
+  color: #1a7ab5;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* === SERIAL ID FORM === */
+.input-group label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  border: 1.5px solid #aac4dc;
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  min-width: 190px;
+  outline: none;
+  background: white;
+}
+
+#searchBtn {
+  background: #1a7ab5;
+  color: white;
+  border: none;
+  padding: 9px 36px;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#searchBtn:hover { background: #145f8e; }
+
+/* === TABLE === */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #8ab4d0;
+}
+
+.table thead th {
+  background: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid #aac4dc;
+}
+
+.table tbody tr { background: #1a7ab5; }
+
+.table tbody td {
+  padding: 10px 14px;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* === ERRORS === */
+.error-label {
+  display: block;
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+#computeBTN{
+  background: #1a7ab5;
+  color: white;
+  border: none;
+  padding: 9px 36px;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#computeBTN:hover {background: #1a7ab5;}
